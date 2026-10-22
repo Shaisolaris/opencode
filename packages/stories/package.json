@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --port 6006"
+    "dev": "node init && vite --port 6006"
   },
   "devDependencies": {
     "@opencode/client": "workspace:*",

@@ -97,10 +97,10 @@
     "./audio/*": "./src/assets/audio/*"
   },
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "build": "node init && rm -rf dist && tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "bun test src --only-failures",
-    "dev": "vite",
+    "dev": "node init && vite",
     "bench:motion": "bun script/motion-bench.ts",
     "generate:spinner": "bun script/generate-spinner.ts",
     "generate:tailwind": "bun run script/tailwind.ts",
