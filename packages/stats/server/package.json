@@ -10,7 +10,7 @@
     ".": "./src/stat-sync.ts"
   },
   "scripts": {
-    "start": "bun src/stat-sync.ts",
+    "start": "node init && bun src/stat-sync.ts",
     "typecheck": "tsgo --noEmit"
   },
   "dependencies": {
