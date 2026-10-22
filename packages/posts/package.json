@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro build && bun script/prepare-cloudflare.ts",
+    "dev": "node init && astro dev",
+    "build": "node init && astro build && bun script/prepare-cloudflare.ts",
     "deploy": "wrangler deploy --config dist/server/wrangler.json",
     "typecheck": "astro check"
   },
