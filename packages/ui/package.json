@@ -90,10 +90,10 @@
     "./audio/*": "./src/assets/audio/*"
   },
   "scripts": {
-    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "build": "node init && rm -rf dist && tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "bun test src --only-failures",
-    "dev": "vite",
+    "dev": "node init && vite",
     "generate:tailwind": "bun run script/tailwind.ts",
     "generate:v2-oc2": "bun run script/build-oc2-v2-overrides.ts"
   },
