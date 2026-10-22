@@ -17,9 +17,9 @@
     "./server-process": "./src/server-process.ts"
   },
   "scripts": {
-    "build": "bun run script/build.ts",
-    "build:node": "bun run script/build-node.ts",
-    "dev": "bun run src/index.ts",
+    "build": "node init && bun run script/build.ts",
+    "build:node": "node init && bun run script/build-node.ts",
+    "dev": "node init && bun run src/index.ts",
     "test": "bun test --timeout 30000 --only-failures",
     "typecheck": "tsc -b"
   },

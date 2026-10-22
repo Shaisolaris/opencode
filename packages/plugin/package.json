@@ -7,7 +7,7 @@
   "scripts": {
     "test": "bun test --only-failures",
     "typecheck": "tsc --noEmit",
-    "build": "tsc -p tsconfig.build.json"
+    "build": "node init && tsc -p tsconfig.build.json"
   },
   "exports": {
     ".": "./src/promise/index.ts",

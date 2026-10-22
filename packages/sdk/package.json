@@ -22,7 +22,7 @@
     "./workerd/effect": "./src/effect/workerd.ts"
   },
   "scripts": {
-    "build": "bun run script/build.ts",
+    "build": "node init && bun run script/build.ts",
     "test": "bun test --timeout 5000",
     "typecheck": "tsc -b",
     "verify:package": "bun run script/verify-package.ts"
