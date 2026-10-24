@@ -32,7 +32,7 @@
     }
   },
   "scripts": {
-    "build": "bun run script/build.ts",
+    "build": "node init && bun run script/build.ts",
     "test": "bun test --only-failures",
     "typecheck": "tsc --noEmit",
     "typecheck:dist": "bun run build && bun typecheck --project tsconfig.dist.json"

@@ -7,9 +7,9 @@
   "license": "MIT",
   "scripts": {
     "typecheck": "tsc --noEmit",
-    "dev": "vite dev --host 0.0.0.0",
-    "build": "vite build",
-    "start": "vite start",
+    "dev": "node init && vite dev --host 0.0.0.0",
+    "build": "node init && vite build",
+    "start": "node init && vite start",
     "test": "bun test --only-failures"
   },
   "dependencies": {

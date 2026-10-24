@@ -4,8 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "wrangler deploy --dry-run --env dev --outdir dist",
-    "dev": "wrangler dev --env dev",
+    "build": "node init && wrangler deploy --dry-run --env dev --outdir dist",
+    "dev": "node init && wrangler dev --env dev",
     "deploy": "wrangler deploy",
     "typecheck": "tsc --noEmit"
   },

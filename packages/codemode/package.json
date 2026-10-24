@@ -20,7 +20,7 @@
     ".": "./src/index.ts"
   },
   "scripts": {
-    "build": "bun run script/build.ts",
+    "build": "node init && bun run script/build.ts",
     "typecheck": "tsc --noEmit",
     "test": "bun test"
   },
